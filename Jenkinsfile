@@ -3,7 +3,7 @@ pipeline {
     stages {
        stage('checkout') {
             steps {
-               git branch: "master", URL: ""
+               git branch: "master", url: "https://github.com/chowdarybvsn/argocd.git"
             }
         } 
         stage ('Build and Test'){
